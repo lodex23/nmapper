@@ -15,4 +15,11 @@ input("Scane done: Press Enter to show Results")
 
 
 print("-----------------------------")
-print("nmap_result.txt")
+
+os.system('clear')
+
+f = open("nmap_result.txt", "r")
+print(f.read())
+
+
+os.system('rm nmap_result.txt')
